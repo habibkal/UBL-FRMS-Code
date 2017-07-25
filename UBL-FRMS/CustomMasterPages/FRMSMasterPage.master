@@ -1,0 +1,298 @@
+﻿<%-- SPG:
+
+This HTML file has been associated with a SharePoint Master Page (.master file) carrying the same name.  While the files remain associated, you will not be allowed to edit the .master file, and any rename, move, or deletion operations will be reciprocated.
+
+To build the master page directly from this HTML file, simply edit the page as you normally would.  Use the Snippet Generator at http://tdl-epm2012:103/_layouts/15/ComponentHome.aspx?Url=http%3A%2F%2Ftdl%2Depm2012%3A103%2F%5Fcatalogs%2Fmasterpage%2FCPC%20Master%20Page%2Emaster to create and customize useful SharePoint entities, then copy and paste them as HTML snippets into your HTML code.   All updates to this file will automatically sync to the associated Master Page.
+
+--%>
+
+<%@ Master Language="C#" %>
+
+
+
+<%@ Register TagPrefix="SharePoint" Namespace="Microsoft.SharePoint.WebControls" Assembly="Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
+<%@ Register TagPrefix="WebPartPages" Namespace="Microsoft.SharePoint.WebPartPages" Assembly="Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
+<%@ Register TagPrefix="wssucw" TagName="Welcome" Src="~/_controltemplates/15/Welcome.ascx" %>
+<%@ Register TagPrefix="wssucmui" TagName="MUISelector" Src="~/_controltemplates/15/MUISelector.ascx" %>
+<%@ Register TagPrefix="PublishingRibbon" TagName="PublishingRibbon" Src="~/_controltemplates/15/Ribbon.ascx" %>
+
+
+<%--<%@ Register TagPrefix="ac25e8b39" Namespace="CPC_UBL.Main.Header" Assembly="CPC UBL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5b757ac62a4bbdf8" %>--%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<SharePoint:SPHtmlTag runat="server" id="SPHtmlTag" dir="&lt;%$Resources:wss,multipages_direction_dir_value%&gt;">
+
+    <head runat="server">
+        <meta http-equiv="X-UA-Compatible" content="IE=10" />
+        <meta name="GENERATOR" content="Microsoft SharePoint" />
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+        <meta http-equiv="Expires" content="0" />
+        <SharePoint:RobotsMetaTag runat="server">
+        </SharePoint:RobotsMetaTag>
+        <SharePoint:PageTitle runat="server">
+<asp:ContentPlaceHolder id="PlaceHolderPageTitle" runat="server">
+<SharePoint:ProjectProperty Property="Title" runat="server">
+</SharePoint:ProjectProperty>
+</asp:ContentPlaceHolder>
+        </SharePoint:PageTitle>
+        <SharePoint:StartScript runat="server">
+        </SharePoint:StartScript>
+        <SharePoint:CssLink runat="server" Version="15">
+        </SharePoint:CssLink>
+        <SharePoint:CacheManifestLink runat="server">
+        </SharePoint:CacheManifestLink>
+        <SharePoint:PageRenderMode runat="server" RenderModeType="Standard">
+        </SharePoint:PageRenderMode>
+        <SharePoint:ScriptLink Language="javascript" Name="core.js" OnDemand="true" runat="server" Localizable="false">
+        </SharePoint:ScriptLink>
+        <SharePoint:ScriptLink Language="javascript" Name="menu.js" OnDemand="true" runat="server" Localizable="false">
+        </SharePoint:ScriptLink>
+        <SharePoint:ScriptLink Language="javascript" Name="callout.js" OnDemand="true" runat="server" Localizable="false">
+        </SharePoint:ScriptLink>
+        <SharePoint:ScriptLink Language="javascript" Name="sharing.js" OnDemand="true" runat="server" Localizable="false">
+        </SharePoint:ScriptLink>
+        <SharePoint:ScriptLink Language="javascript" Name="suitelinks.js" OnDemand="true" runat="server" Localizable="false">
+        </SharePoint:ScriptLink>
+        <SharePoint:CustomJSUrl runat="server">
+        </SharePoint:CustomJSUrl>
+        <SharePoint:SoapDiscoveryLink runat="server">
+        </SharePoint:SoapDiscoveryLink>
+        <SharePoint:AjaxDelta ID="DeltaPlaceHolderAdditionalPageHead" Container="false" runat="server">
+            <asp:ContentPlaceHolder ID="PlaceHolderAdditionalPageHead" runat="server">
+            </asp:ContentPlaceHolder>
+            <SharePoint:DelegateControl runat="server" ControlId="AdditionalPageHead" AllowMultipleControls="true">
+            </SharePoint:DelegateControl>
+            <asp:ContentPlaceHolder ID="PlaceHolderBodyAreaClass" runat="server">
+            </asp:ContentPlaceHolder>
+        </SharePoint:AjaxDelta>
+        <SharePoint:CssRegistration Name="Themable/corev15.css" runat="server">
+        </SharePoint:CssRegistration>
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="/sites/fraud/Style Library/assets/css/bootstrap.css" />
+        <!-- Custom Css -->
+        <link rel="stylesheet" href="/sites/fraud/Style Library/assets/css/style.css" />
+        <link rel="stylesheet" href="/sites/fraud/Style Library/assets/css/cpc-form-style.css" />
+        <!-- datepicker -->
+        <link rel="stylesheet" href="/sites/fraud/Style Library/assets/css/datepicker.css" />
+        <link rel="stylesheet" href="/sites/fraud/Style Library/assets/css/jquery.timepicker.css" />
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="/sites/fraud/Style Library/assets/js/jquery.min.js">//<![CDATA[
+       
+        
+        
+        //]]></script>
+
+        <script src="/sites/fraud/Style Library/assets/js/jquery.balloon.js">//<![CDATA[
+        
+        //]]></script>
+
+        <script src="/sites/fraud/Style Library/assets/js/bootstrap.js">//<![CDATA[
+        
+        
+        
+        
+        //]]></script>
+        <script src="/sites/fraud/Style Library/assets/js/jquery.timepicker.min.js">//<![CDATA[
+        
+		//]]></script>
+
+        <!-- bxSlider Javascript file -->
+        <script type="text/javascript" src="/sites/fraud/Style Library/assets/js/jquery.bxslider.min.js">//<![CDATA[
+
+
+
+
+
+        
+        
+        
+        
+        //]]></script>
+        <!-- bxSlider CSS file -->
+        <link href="/sites/fraud/Style Library/assets/css/jquery.bxslider.css" rel="stylesheet" />
+        <script type="text/javascript">//<![CDATA[
+
+            $(document).ready(function () {
+                $('.bxslider').bxSlider(
+          {
+
+              auto: true,
+              speed: 500
+
+          }
+          );
+            });
+
+
+
+
+
+
+            //]]></script>
+        <!-- Rsponsive nav Javascript -->
+        <script>//<![CDATA[
+            function myFunction() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "topnav";
+                }
+            }
+
+
+
+
+
+            //]]></script>
+
+
+    </head>
+
+    <body onhashchange="if (typeof(_spBodyOnHashChange) != 'undefined') _spBodyOnHashChange();">
+        <SharePoint:SPClientIDGenerator runat="server" ServerControlID="DeltaPlaceHolderMain;DeltaPlaceHolderPageTitleInTitleArea;DeltaPlaceHolderUtilityContent" />
+        <SharePoint:ImageLink runat="server" />
+        <SharePoint:SharePointForm onsubmit="if (typeof(_spFormOnSubmitWrapper) != 'undefined') {return _spFormOnSubmitWrapper();} else {return true;}" runat="server">
+
+            <asp:ScriptManager ID="ScriptManager" runat="server" EnablePageMethods="false" EnablePartialRendering="true" EnableScriptGlobalization="false" EnableScriptLocalization="true" />
+           
+            <SharePoint:AjaxDelta ID="DeltaSPWebPartManager" runat="server">
+                <WebPartPages:SPWebPartManager runat="server">
+                </WebPartPages:SPWebPartManager>
+            </SharePoint:AjaxDelta>
+
+
+
+            <SharePoint:SPSecurityTrimmedControl runat="server" HideFromSearchCrawler="true" EmitDiv="true">
+                <div id="TurnOnAccessibility" style="display: none" class="s4-notdlg noindex">
+                    <a id="linkTurnOnAcc" href="#" class="ms-accessible ms-acc-button" onclick="SetIsAccessibilityFeatureEnabled(true);UpdateAccessibilityUI();document.getElementById('linkTurnOffAcc').focus();return false;">
+                        <SharePoint:EncodedLiteral runat="server" Text="&lt;%$Resources:wss,master_turnonaccessibility%&gt;" EncodeMethod="HtmlEncode">
+                        </SharePoint:EncodedLiteral></a>
+                </div>
+                <div id="TurnOffAccessibility" style="display: none" class="s4-notdlg noindex">
+                    <a id="linkTurnOffAcc" href="#" class="ms-accessible ms-acc-button" onclick="SetIsAccessibilityFeatureEnabled(false);UpdateAccessibilityUI();document.getElementById('linkTurnOnAcc').focus();return false;">
+                        <SharePoint:EncodedLiteral runat="server" Text="&lt;%$Resources:wss,master_turnoffaccessibility%&gt;" EncodeMethod="HtmlEncode">
+                        </SharePoint:EncodedLiteral></a>
+                </div>
+            </SharePoint:SPSecurityTrimmedControl>
+            <div id="ms-designer-ribbon">
+                <PublishingRibbon:PublishingRibbon runat="server" />
+            </div>
+            <SharePoint:SPSecurityTrimmedControl runat="server" AuthenticationRestrictions="AnonymousUsersOnly">
+                <wssucw:Welcome runat="server" EnableViewState="false">
+                </wssucw:Welcome>
+            </SharePoint:SPSecurityTrimmedControl>
+
+            <div id="s4-workspace">
+                <div id="s4-bodyContainer">
+                    <!-- Start Container Logo, User Info, Navigation -->
+                    <div class="container">
+                        <div class="row logo-bg-strip">
+                            <div class="col-md-6 no-padding logo">
+                                <a href="http://sp2013:90/sites/fraud/">
+                                    <img alt="Logo Image" src="/sites/fraud/Style Library/assets/images/logo.png" /></a>
+                            </div>
+                            <div class="col-md-6 no-padding">
+                                <div id="ctl00_g_e6f84b90_69c2_42f1_a07b_d4b1ba45b4a0_TasksDiv">
+                                    <div class="notification">
+                                        <ul class="nav navbar-nav">
+                                            <li class="dropdown dropdown-extended dropdown-inbox dropdown-dark">
+                                                <a class="dropdown-toggle" role="button" aria-expanded="false" aria-haspopup="true" href="#" data-toggle="dropdown">
+                                                    <img src="/sites/fraud/Style Library/assets/images/notification.png" />
+                                                    <span class="badge badge-red">
+                                                        <span id="ctl00_g_e6f84b90_69c2_42f1_a07b_d4b1ba45b4a0_ctl00_lblCount">50</span></span></a>
+                                                <ul class="dropdown-menu notification_wrapper">
+                                                    <div class="notification_scroll">
+                                                        <h4 class="notif_title">
+                                                            <span id="ctl00_g_e6f84b90_69c2_42f1_a07b_d4b1ba45b4a0_ctl00_lblNotification">Notifications</span></h4>
+                                                    </div>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 no-padding salogan">
+                                <!-- Start User Info -->
+                                <div class="user-info">
+                                    <div class="user-name">
+                                        <span id="ctl00_g_e6f84b90_69c2_42f1_a07b_d4b1ba45b4a0_lblUser">System Account</span>
+                                    </div>
+                                    <div class="user-pic">
+                                        <img style="width: 32px; height: 32px;" alt="User Image" src="/sites/fraud/Style Library/assets/images/default-user-pic.png" />
+                                    </div>
+                                </div>
+                                <!-- End User Info -->
+                                <div class="salogan-contant">
+                                    <img alt="Slogan Image" src="/sites/fraud/Style Library/assets/images/salogan.png" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Container Logo, User Info, Navigation -->
+                    <!-- Start Container -->
+                    <!-- End Container -->
+                    <div data-name="ContentPlaceHolderMain">
+
+
+                        <SharePoint:AjaxDelta ID="DeltaPlaceHolderMain" IsMainContent="true" runat="server">
+                            <asp:ContentPlaceHolder ID="PlaceHolderMain" runat="server">
+                            </asp:ContentPlaceHolder>
+                        </SharePoint:AjaxDelta>
+                    </div>
+                    <div class="copyright">
+                        <p>2017 All Rights Reserved. United Bank Limited </p>
+                    </div>
+                    <!-- date picker -->
+                    <script src="/sites/fraud/Style Library/assets/js/jQuery-datepicker-UI-v1-12.js">//<![CDATA[
+		
+		
+        
+        //]]></script>
+                </div>
+            </div>
+
+            <SharePoint:AjaxDelta ID="DeltaFormDigest" BlockElement="true" runat="server">
+                <asp:ContentPlaceHolder ID="PlaceHolderFormDigest" runat="server">
+                    <SharePoint:FormDigest runat="server" />
+                </asp:ContentPlaceHolder>
+            </SharePoint:AjaxDelta>
+        </SharePoint:SharePointForm>
+        <SharePoint:AjaxDelta ID="DeltaPlaceHolderUtilityContent" runat="server">
+            <asp:ContentPlaceHolder ID="PlaceHolderUtilityContent" runat="server" />
+        </SharePoint:AjaxDelta>
+        <asp:ContentPlaceHolder ID="PlaceHolderTitleAreaClass" Visible="False" runat="server" />
+        <asp:ContentPlaceHolder ID="PlaceHolderTitleBreadcrumb" Visible="False" runat="server" />
+        <asp:ContentPlaceHolder ID="PlaceHolderGlobalNavigationSiteMap" Visible="False" runat="server" />
+        <asp:ContentPlaceHolder ID="PlaceHolderGlobalNavigation" Visible="False" runat="server" />
+        <asp:ContentPlaceHolder ID="PlaceHolderSearchArea" Visible="False" runat="server" />
+        <asp:ContentPlaceHolder ID="PlaceHolderLeftNavBar" Visible="False" runat="server" />
+        <asp:ContentPlaceHolder ID="PlaceHolderHorizontalNav" Visible="False" runat="server" />
+        <asp:ContentPlaceHolder ID="PlaceHolderTopNavBar" Visible="False" runat="server" />
+        <asp:ContentPlaceHolder ID="PlaceHolderLeftNavBarDataSource" Visible="False" runat="server" />
+        <asp:ContentPlaceHolder ID="PlaceHolderCalendarNavigator" Visible="False" runat="server" />
+        <asp:ContentPlaceHolder ID="PlaceHolderLeftActions" Visible="False" runat="server" />
+        <asp:ContentPlaceHolder ID="PlaceHolderLeftNavBarTop" Visible="False" runat="server" />
+        <asp:ContentPlaceHolder ID="PlaceHolderSiteName" Visible="False" runat="server" />
+        <asp:ContentPlaceHolder ID="PlaceHolderPageTitleInTitleArea" Visible="False" runat="server" />
+        <asp:ContentPlaceHolder ID="PlaceHolderPageDescription" Visible="False" runat="server" />
+        <asp:ContentPlaceHolder ID="PlaceHolderPageImage" Visible="False" runat="server" />
+        <asp:ContentPlaceHolder ID="PlaceHolderTitleLeftBorder" Visible="False" runat="server" />
+        <asp:ContentPlaceHolder ID="PlaceHolderMiniConsole" Visible="False" runat="server" />
+        <asp:ContentPlaceHolder ID="PlaceHolderTitleRightMargin" Visible="False" runat="server" />
+        <asp:ContentPlaceHolder ID="PlaceHolderTitleAreaSeparator" Visible="False" runat="server" />
+        <asp:ContentPlaceHolder ID="PlaceHolderNavSpacer" Visible="False" runat="server" />
+        <asp:ContentPlaceHolder ID="PlaceHolderLeftNavBarBorder" Visible="False" runat="server" />
+        <asp:ContentPlaceHolder ID="PlaceHolderBodyLeftBorder" Visible="False" runat="server" />
+        <asp:ContentPlaceHolder ID="PlaceHolderBodyRightMargin" Visible="False" runat="server" />
+        <asp:ContentPlaceHolder ID="WSSDesignConsole" Visible="False" runat="server" />
+        <asp:ContentPlaceHolder ID="SPNavigation" Visible="False" runat="server" />
+        <asp:ContentPlaceHolder ID="PlaceHolderQuickLaunchTop" Visible="False" runat="server" />
+        <asp:ContentPlaceHolder ID="PlaceHolderQuickLaunchBottom" Visible="False" runat="server" />
+    </body>
+
+</SharePoint:SPHtmlTag>

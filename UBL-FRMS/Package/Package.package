@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="37cec228-19f9-4505-9315-866efa9de29d" solutionId="37cec228-19f9-4505-9315-866efa9de29d" resetWebServer="false" sharePointProductVersion="15.0" name="UBL_FRMS" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="967fee1e-c11e-43cf-8e3b-87478347ce18" />
+  </features>
+  <projectItems>
+    <projectItemReference itemId="8535bef8-4885-40b4-bd15-b2eead5bc11f" />
+    <projectItemReference itemId="e6758194-9898-4c49-bb74-8115f30fed01" />
+  </projectItems>
+</package>

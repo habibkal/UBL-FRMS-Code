@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+	<Module Name="assets" Url="Style Library">
+		<File Path="assets\css\bootstrap-theme.css" Url="assets/css/bootstrap-theme.css" Type="GhostableInLibrary" />
+		<File Path="assets\css\bootstrap.css" Url="assets/css/bootstrap.css" Type="GhostableInLibrary" />
+		<File Path="assets\css\bootstrap.min.css" Url="assets/css/bootstrap.min.css" Type="GhostableInLibrary" />
+		<File Path="assets\css\cpc-form-style.css" Url="assets/css/cpc-form-style.css" Type="GhostableInLibrary" />
+		<File Path="assets\css\datepicker.css" Url="assets/css/datepicker.css" Type="GhostableInLibrary" />
+		<File Path="assets\css\jquery.timepicker.css" Url="assets/css/jquery.timepicker.css" Type="GhostableInLibrary" />
+		<File Path="assets\css\style.css" Url="assets/css/style.css" Type="GhostableInLibrary" />
+		<File Path="assets\fonts\futult-webfont.eot" Url="assets/fonts/futult-webfont.eot" Type="GhostableInLibrary" />
+		<File Path="assets\fonts\futult-webfont.svg" Url="assets/fonts/futult-webfont.svg" Type="GhostableInLibrary" />
+		<File Path="assets\fonts\futult-webfont.ttf" Url="assets/fonts/futult-webfont.ttf" Type="GhostableInLibrary" />
+		<File Path="assets\fonts\futult-webfont.woff" Url="assets/fonts/futult-webfont.woff" Type="GhostableInLibrary" />
+		<File Path="assets\fonts\futult-webfont.woff2" Url="assets/fonts/futult-webfont.woff2" Type="GhostableInLibrary" />
+		<File Path="assets\fonts\generator_config.txt" Url="assets/fonts/generator_config.txt" Type="GhostableInLibrary" />
+		<File Path="assets\fonts\glyphicons-halflings-regular.eot" Url="assets/fonts/glyphicons-halflings-regular.eot" Type="GhostableInLibrary" />
+		<File Path="assets\fonts\glyphicons-halflings-regular.svg" Url="assets/fonts/glyphicons-halflings-regular.svg" Type="GhostableInLibrary" />
+		<File Path="assets\fonts\glyphicons-halflings-regular.ttf" Url="assets/fonts/glyphicons-halflings-regular.ttf" Type="GhostableInLibrary" />
+		<File Path="assets\fonts\glyphicons-halflings-regular.woff" Url="assets/fonts/glyphicons-halflings-regular.woff" Type="GhostableInLibrary" />
+		<File Path="assets\fonts\glyphicons-halflings-regular.woff2" Url="assets/fonts/glyphicons-halflings-regular.woff2" Type="GhostableInLibrary" />
+		<File Path="assets\fonts\signikanegative-light-webfont.eot" Url="assets/fonts/signikanegative-light-webfont.eot" Type="GhostableInLibrary" />
+		<File Path="assets\fonts\signikanegative-light-webfont.svg" Url="assets/fonts/signikanegative-light-webfont.svg" Type="GhostableInLibrary" />
+		<File Path="assets\fonts\signikanegative-light-webfont.ttf" Url="assets/fonts/signikanegative-light-webfont.ttf" Type="GhostableInLibrary" />
+		<File Path="assets\fonts\signikanegative-light-webfont.woff" Url="assets/fonts/signikanegative-light-webfont.woff" Type="GhostableInLibrary" />
+		<File Path="assets\fonts\signikanegative-light-webfont.woff2" Url="assets/fonts/signikanegative-light-webfont.woff2" Type="GhostableInLibrary" />
+		<File Path="assets\fonts\stylesheet.css" Url="assets/fonts/stylesheet.css" Type="GhostableInLibrary" />
+		<File Path="assets\js\bootstrap.js" Url="assets/js/bootstrap.js" Type="GhostableInLibrary" />
+		<File Path="assets\js\bootstrap.min.js" Url="assets/js/bootstrap.min.js" Type="GhostableInLibrary" />
+		<File Path="assets\js\jQuery-datepicker-UI-v1-12.js" Url="assets/js/jQuery-datepicker-UI-v1-12.js" Type="GhostableInLibrary" />
+		<File Path="assets\js\jquery.balloon.js" Url="assets/js/jquery.balloon.js" Type="GhostableInLibrary" />
+		<File Path="assets\js\jquery.bxslider.min.js" Url="assets/js/jquery.bxslider.min.js" Type="GhostableInLibrary" />
+		<File Path="assets\js\jquery.js" Url="assets/js/jquery.js" Type="GhostableInLibrary" />
+		<File Path="assets\js\jquery.min.js" Url="assets/js/jquery.min.js" Type="GhostableInLibrary" />
+		<File Path="assets\js\jquery.timepicker.min.js" Url="assets/js/jquery.timepicker.min.js" Type="GhostableInLibrary" />
+		<File Path="assets\js\npm.js" Url="assets/js/npm.js" Type="GhostableInLibrary" />
+    <File Path="assets\css\jquery.bxslider.css" Url="assets/css/jquery.bxslider.css" />
+    <File Path="assets\images\back_arrow_active.png" Url="assets/images/back_arrow_active.png" />
+    <File Path="assets\images\back_arrow_hover.png" Url="assets/images/back_arrow_hover.png" />
+    <File Path="assets\images\bolit_blue.png" Url="assets/images/bolit_blue.png" />
+    <File Path="assets\images\bolit_gray.png" Url="assets/images/bolit_gray.png" />
+    <File Path="assets\images\bolit_mehron.png" Url="assets/images/bolit_mehron.png" />
+    <File Path="assets\images\book-meeting-icon.png" Url="assets/images/book-meeting-icon.png" />
+    <File Path="assets\images\book-meeting-icon_grey.png" Url="assets/images/book-meeting-icon_grey.png" />
+    <File Path="assets\images\booking-img.png" Url="assets/images/booking-img.png" />
+    <File Path="assets\images\business_case-icon.png" Url="assets/images/business_case-icon.png" />
+    <File Path="assets\images\business_case-icon_grey.png" Url="assets/images/business_case-icon_grey.png" />
+    <File Path="assets\images\bx_loader.gif" Url="assets/images/bx_loader.gif" />
+    <File Path="assets\images\calender-left.png" Url="assets/images/calender-left.png" />
+    <File Path="assets\images\calender-right.png" Url="assets/images/calender-right.png" />
+    <File Path="assets\images\checkbox.png" Url="assets/images/checkbox.png" />
+    <File Path="assets\images\close-icon-2.png" Url="assets/images/close-icon-2.png" />
+    <File Path="assets\images\close-icon.png" Url="assets/images/close-icon.png" />
+    <File Path="assets\images\close_icon.jpg" Url="assets/images/close_icon.jpg" />
+    <File Path="assets\images\controls.png" Url="assets/images/controls.png" />
+    <File Path="assets\images\controls1.png" Url="assets/images/controls1.png" />
+    <File Path="assets\images\cpc-admin-icon.png" Url="assets/images/cpc-admin-icon.png" />
+    <File Path="assets\images\cpc-admin-icon_grey.png" Url="assets/images/cpc-admin-icon_grey.png" />
+    <File Path="assets\images\cpc-icon.png" Url="assets/images/cpc-icon.png" />
+    <File Path="assets\images\cpc-icon_grey.png" Url="assets/images/cpc-icon_grey.png" />
+    <File Path="assets\images\dashboard-icon.png" Url="assets/images/dashboard-icon.png" />
+    <File Path="assets\images\dashboard-icon_grey.png" Url="assets/images/dashboard-icon_grey.png" />
+    <File Path="assets\images\default-user-pic.png" Url="assets/images/default-user-pic.png" />
+    <File Path="assets\images\footer-img.png" Url="assets/images/footer-img.png" />
+    <File Path="assets\images\form-banner.png" Url="assets/images/form-banner.png" />
+    <File Path="assets\images\group.png" Url="assets/images/group.png" />
+    <File Path="assets\images\logo-bg-strip.png" Url="assets/images/logo-bg-strip.png" />
+    <File Path="assets\images\logo.png" Url="assets/images/logo.png" />
+    <File Path="assets\images\news-banner.png" Url="assets/images/news-banner.png" />
+    <File Path="assets\images\news-pick1.png" Url="assets/images/news-pick1.png" />
+    <File Path="assets\images\news_icon1.png" Url="assets/images/news_icon1.png" />
+    <File Path="assets\images\next_arrow_active.png" Url="assets/images/next_arrow_active.png" />
+    <File Path="assets\images\next_arrow_hover.png" Url="assets/images/next_arrow_hover.png" />
+    <File Path="assets\images\notification-hover.png" Url="assets/images/notification-hover.png" />
+    <File Path="assets\images\notification.png" Url="assets/images/notification.png" />
+    <File Path="assets\images\policies-icon.png" Url="assets/images/policies-icon.png" />
+    <File Path="assets\images\policies-icon_grey.png" Url="assets/images/policies-icon_grey.png" />
+    <File Path="assets\images\policy.png" Url="assets/images/policy.png" />
+    <File Path="assets\images\popup_icon.png" Url="assets/images/popup_icon.png" />
+    <File Path="assets\images\remove-icon-png-26.png" Url="assets/images/remove-icon-png-26.png" />
+    <File Path="assets\images\salogan.png" Url="assets/images/salogan.png" />
+    <File Path="assets\images\select-icon-2.png" Url="assets/images/select-icon-2.png" />
+    <File Path="assets\images\slide-1.png" Url="assets/images/slide-1.png" />
+    <File Path="assets\images\user-info.png" Url="assets/images/user-info.png" />
+    <File Path="assets\images\weather-next.png" Url="assets/images/weather-next.png" />
+    <File Path="assets\images\weather-perv.png" Url="assets/images/weather-perv.png" />
+    <File Path="assets\images\Loader_images\loading.gif" Url="assets/images/Loader_images/loading.gif" />
+    <File Path="assets\images\Loader_images\loading_gif.gif" Url="assets/images/Loader_images/loading_gif.gif" />
+    <File Path="assets\images\Loader_images\loading5.gif" Url="assets/images/Loader_images/loading5.gif" />
+    <File Path="assets\images\Loader_images\preloader.gif" Url="assets/images/Loader_images/preloader.gif" />
+    <File Path="assets\images\ui-icons_444444_256x240.png" Url="assets/images/ui-icons_444444_256x240.png" />
+    <File Path="assets\images\ui-icons_555555_256x240.png" Url="assets/images/ui-icons_555555_256x240.png" />
+  </Module>
+</Elements>

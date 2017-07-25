@@ -1,0 +1,474 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8A55EE4E-60CF-40B4-B9CA-FE18752B1164}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UBL_FRMS</RootNamespace>
+    <AssemblyName>UBL-FRMS</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetOfficeVersion>15.0</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SandboxedSolution>False</SandboxedSolution>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=4.1.7.607, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\AjaxControlToolkit\AjaxControlToolkit.Binary.NET45\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Client.ServerRuntime" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\Common\Common.cs" />
+    <Compile Include="Classes\Common\Encrypter.cs" />
+    <Compile Include="Classes\Common\ExceptionHandling.cs" />
+    <Compile Include="Classes\Common\Utility.cs" />
+    <Compile Include="Classes\Constant\GeneralConstants.cs" />
+    <Compile Include="Classes\Data\AnnouncementList.cs" />
+    <Compile Include="Classes\Data\BannerList.cs" />
+    <Compile Include="Classes\Data\CardTypeList.cs" />
+    <Compile Include="Classes\Data\CaseClosedStatusList.cs" />
+    <Compile Include="Classes\Data\CaseStatusList.cs" />
+    <Compile Include="Classes\Data\ChargeBackRaisedList.cs" />
+    <Compile Include="Classes\Data\CityList.cs" />
+    <Compile Include="Classes\Data\ConfigurationList.cs" />
+    <Compile Include="Classes\Data\CountryList.cs" />
+    <Compile Include="Classes\Data\CustomerLiabilityList.cs" />
+    <Compile Include="Classes\Data\DetectionModeList.cs" />
+    <Compile Include="Classes\Data\ExceptionLogList.cs" />
+    <Compile Include="Classes\Data\FactAndFindingStatusList.cs" />
+    <Compile Include="Classes\Data\FeatureCategoryList.cs" />
+    <Compile Include="Classes\Data\FraudIncidenceList.cs" />
+    <Compile Include="Classes\Data\FraudTypeCodeList.cs" />
+    <Compile Include="Classes\Data\FRMUInternalInfoBlockCodeList.cs" />
+    <Compile Include="Classes\Data\MerchantCategoryList.cs" />
+    <Compile Include="Classes\Data\RegionList.cs" />
+    <Compile Include="Classes\Data\StaffStatusList.cs" />
+    <Compile Include="Classes\Data\TC40SAFEList.cs" />
+    <Compile Include="Classes\Data\TransactionApprovalModeList.cs" />
+    <Compile Include="Classes\Data\TransactionBaseCurrencyList.cs" />
+    <Compile Include="Classes\Data\TransactionStatusList.cs" />
+    <Compile Include="Classes\Data\UFLList.cs" />
+    <Compile Include="Classes\Data\WorkflowTasksList.cs" />
+    <Compile Include="Classes\Helper\CamlQueryHelper.cs" />
+    <Compile Include="Classes\Helper\ListDataHelper.cs" />
+    <Compile Include="Classes\Helper\Misc.cs" />
+    <Compile Include="ControlTemplates\UBL-FRMS\CDCCaseCloseConfirmation.ascx.cs">
+      <DependentUpon>CDCCaseCloseConfirmation.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlTemplates\UBL-FRMS\CDCCaseCloseConfirmation.ascx.designer.cs">
+      <DependentUpon>CDCCaseCloseConfirmation.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlTemplates\UBL-FRMS\CDCCaseInvestigationComments.ascx.cs">
+      <DependentUpon>CDCCaseInvestigationComments.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlTemplates\UBL-FRMS\CDCCaseInvestigationComments.ascx.designer.cs">
+      <DependentUpon>CDCCaseInvestigationComments.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlTemplates\UBL-FRMS\CDCCustomerInformationTAB.ascx.cs">
+      <DependentUpon>CDCCustomerInformationTAB.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlTemplates\UBL-FRMS\CDCCustomerInformationTAB.ascx.designer.cs">
+      <DependentUpon>CDCCustomerInformationTAB.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlTemplates\UBL-FRMS\CDCDecisionInformation.ascx.cs">
+      <DependentUpon>CDCDecisionInformation.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlTemplates\UBL-FRMS\CDCDecisionInformation.ascx.designer.cs">
+      <DependentUpon>CDCDecisionInformation.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlTemplates\UBL-FRMS\CDCFactsAndFinding.ascx.cs">
+      <DependentUpon>CDCFactsAndFinding.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlTemplates\UBL-FRMS\CDCFactsAndFinding.ascx.designer.cs">
+      <DependentUpon>CDCFactsAndFinding.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlTemplates\UBL-FRMS\CDCFRMUInternalInformation.ascx.cs">
+      <DependentUpon>CDCFRMUInternalInformation.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlTemplates\UBL-FRMS\CDCFRMUInternalInformation.ascx.designer.cs">
+      <DependentUpon>CDCFRMUInternalInformation.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlTemplates\UBL-FRMS\CDCReportingDateTAB.ascx.cs">
+      <DependentUpon>CDCReportingDateTAB.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlTemplates\UBL-FRMS\CDCReportingDateTAB.ascx.designer.cs">
+      <DependentUpon>CDCReportingDateTAB.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlTemplates\UBL-FRMS\CDCSBPFinancial.ascx.cs">
+      <DependentUpon>CDCSBPFinancial.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlTemplates\UBL-FRMS\CDCSBPFinancial.ascx.designer.cs">
+      <DependentUpon>CDCSBPFinancial.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlTemplates\UBL-FRMS\CDCStaffDetails.ascx.cs">
+      <DependentUpon>CDCStaffDetails.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlTemplates\UBL-FRMS\CDCStaffDetails.ascx.designer.cs">
+      <DependentUpon>CDCStaffDetails.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlTemplates\UBL-FRMS\CDCTransactionTAB.ascx.cs">
+      <DependentUpon>CDCTransactionTAB.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlTemplates\UBL-FRMS\CDCTransactionTAB.ascx.designer.cs">
+      <DependentUpon>CDCTransactionTAB.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlTemplates\UBL-FRMS\LDCApplicationDetailTAB.ascx.cs">
+      <DependentUpon>LDCApplicationDetailTAB.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlTemplates\UBL-FRMS\LDCApplicationDetailTAB.ascx.designer.cs">
+      <DependentUpon>LDCApplicationDetailTAB.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlTemplates\UBL-FRMS\LDCCaseBriefingTAB.ascx.cs">
+      <DependentUpon>LDCCaseBriefingTAB.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlTemplates\UBL-FRMS\LDCCaseBriefingTAB.ascx.designer.cs">
+      <DependentUpon>LDCCaseBriefingTAB.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlTemplates\UBL-FRMS\LDCCaseCloseConfirmationTAB.ascx.cs">
+      <DependentUpon>LDCCaseCloseConfirmationTAB.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlTemplates\UBL-FRMS\LDCCaseCloseConfirmationTAB.ascx.designer.cs">
+      <DependentUpon>LDCCaseCloseConfirmationTAB.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlTemplates\UBL-FRMS\LDCCaseInvestigationCommentsTAB.ascx.cs">
+      <DependentUpon>LDCCaseInvestigationCommentsTAB.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlTemplates\UBL-FRMS\LDCCaseInvestigationCommentsTAB.ascx.designer.cs">
+      <DependentUpon>LDCCaseInvestigationCommentsTAB.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlTemplates\UBL-FRMS\LDCCheckFraudDBTAB.ascx.cs">
+      <DependentUpon>LDCCheckFraudDBTAB.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlTemplates\UBL-FRMS\LDCCheckFraudDBTAB.ascx.designer.cs">
+      <DependentUpon>LDCCheckFraudDBTAB.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlTemplates\UBL-FRMS\LDCDecisionInformationTAB.ascx.cs">
+      <DependentUpon>LDCDecisionInformationTAB.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlTemplates\UBL-FRMS\LDCDecisionInformationTAB.ascx.designer.cs">
+      <DependentUpon>LDCDecisionInformationTAB.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlTemplates\UBL-FRMS\LDCFactsAndFindingTAB.ascx.cs">
+      <DependentUpon>LDCFactsAndFindingTAB.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlTemplates\UBL-FRMS\LDCFactsAndFindingTAB.ascx.designer.cs">
+      <DependentUpon>LDCFactsAndFindingTAB.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlTemplates\UBL-FRMS\LDCReportingDateTAB.ascx.cs">
+      <DependentUpon>LDCReportingDateTAB.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlTemplates\UBL-FRMS\LDCReportingDateTAB.ascx.designer.cs">
+      <DependentUpon>LDCReportingDateTAB.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlTemplates\UBL-FRMS\LDCSBPFinancialTAB.ascx.cs">
+      <DependentUpon>LDCSBPFinancialTAB.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlTemplates\UBL-FRMS\LDCSBPFinancialTAB.ascx.designer.cs">
+      <DependentUpon>LDCSBPFinancialTAB.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlTemplates\UBL-FRMS\LDCStaffDetailTAB.ascx.cs">
+      <DependentUpon>LDCStaffDetailTAB.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlTemplates\UBL-FRMS\LDCStaffDetailTAB.ascx.designer.cs">
+      <DependentUpon>LDCStaffDetailTAB.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlTemplates\UBL-FRMS\UCAnnouncement.ascx.cs">
+      <DependentUpon>UCAnnouncement.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlTemplates\UBL-FRMS\UCAnnouncement.ascx.designer.cs">
+      <DependentUpon>UCAnnouncement.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlTemplates\UBL-FRMS\UCAnnouncementDetails.ascx.cs">
+      <DependentUpon>UCAnnouncementDetails.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlTemplates\UBL-FRMS\UCAnnouncementDetails.ascx.designer.cs">
+      <DependentUpon>UCAnnouncementDetails.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlTemplates\UBL-FRMS\UCAnnouncementListing.ascx.cs">
+      <DependentUpon>UCAnnouncementListing.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlTemplates\UBL-FRMS\UCAnnouncementListing.ascx.designer.cs">
+      <DependentUpon>UCAnnouncementListing.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlTemplates\UBL-FRMS\UCBanner.ascx.cs">
+      <DependentUpon>UCBanner.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlTemplates\UBL-FRMS\UCBanner.ascx.designer.cs">
+      <DependentUpon>UCBanner.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlTemplates\UBL-FRMS\UCCardDisputeCases.ascx.cs">
+      <DependentUpon>UCCardDisputeCases.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlTemplates\UBL-FRMS\UCCardDisputeCases.ascx.designer.cs">
+      <DependentUpon>UCCardDisputeCases.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlTemplates\UBL-FRMS\UCCreateCardDisputeCases.ascx.cs">
+      <DependentUpon>UCCreateCardDisputeCases.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlTemplates\UBL-FRMS\UCCreateCardDisputeCases.ascx.designer.cs">
+      <DependentUpon>UCCreateCardDisputeCases.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlTemplates\UBL-FRMS\UCCreateLoanCases.ascx.cs">
+      <DependentUpon>UCCreateLoanCases.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlTemplates\UBL-FRMS\UCCreateLoanCases.ascx.designer.cs">
+      <DependentUpon>UCCreateLoanCases.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlTemplates\UBL-FRMS\UCFeatureCategory.ascx.cs">
+      <DependentUpon>UCFeatureCategory.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlTemplates\UBL-FRMS\UCFeatureCategory.ascx.designer.cs">
+      <DependentUpon>UCFeatureCategory.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlTemplates\UBL-FRMS\UCLoanDisputeCases.ascx.cs">
+      <DependentUpon>UCLoanDisputeCases.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlTemplates\UBL-FRMS\UCLoanDisputeCases.ascx.designer.cs">
+      <DependentUpon>UCLoanDisputeCases.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\fonts\futult-webfont.eot" />
+    <None Include="assets\fonts\futult-webfont.ttf" />
+    <None Include="assets\fonts\futult-webfont.woff" />
+    <None Include="assets\fonts\futult-webfont.woff2" />
+    <None Include="assets\fonts\glyphicons-halflings-regular.eot" />
+    <None Include="assets\fonts\glyphicons-halflings-regular.ttf" />
+    <None Include="assets\fonts\glyphicons-halflings-regular.woff" />
+    <None Include="assets\fonts\glyphicons-halflings-regular.woff2" />
+    <None Include="assets\fonts\signikanegative-light-webfont.eot" />
+    <None Include="assets\fonts\signikanegative-light-webfont.ttf" />
+    <None Include="assets\fonts\signikanegative-light-webfont.woff" />
+    <None Include="assets\fonts\signikanegative-light-webfont.woff2" />
+    <None Include="assets\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{3cbf4550-d602-4789-9796-32b241453d49}</SharePointProjectItemId>
+    </None>
+    <None Include="bin\Debug\UBL_FRMS.wsp" />
+    <None Include="bin\Release\UBL_FRMS.wsp" />
+    <None Include="ControlTemplates\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{e6758194-9898-4c49-bb74-8115f30fed01}</SharePointProjectItemId>
+    </None>
+    <None Include="CustomMasterPages\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{094137fa-b873-45c6-9eb7-e340edcd55a6}</SharePointProjectItemId>
+    </None>
+    <None Include="Features\Feature1\Feature1.feature">
+      <FeatureId>{967fee1e-c11e-43cf-8e3b-87478347ce18}</FeatureId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="Layouts\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{8535bef8-4885-40b4-bd15-b2eead5bc11f}</SharePointProjectItemId>
+    </None>
+    <None Include="Package\Package.package">
+      <PackageId>{37cec228-19f9-4505-9315-866efa9de29d}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+    <None Include="Pages\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{e0a591d7-09d6-4694-8ad7-eb3ca40bac40}</SharePointProjectItemId>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Layouts\UBL-FRMS\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assets\css\bootstrap-theme.css" />
+    <Content Include="assets\css\bootstrap.css" />
+    <Content Include="assets\css\bootstrap.min.css" />
+    <Content Include="assets\css\cpc-form-style.css" />
+    <Content Include="assets\css\datepicker.css" />
+    <Content Include="assets\css\jquery.bxslider.css" />
+    <Content Include="assets\css\jquery.timepicker.css" />
+    <Content Include="assets\css\style.css" />
+    <Content Include="assets\Elements.xml" />
+    <Content Include="assets\fonts\futult-webfont.svg" />
+    <Content Include="assets\fonts\generator_config.txt" />
+    <Content Include="assets\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="assets\fonts\signikanegative-light-webfont.svg" />
+    <Content Include="assets\fonts\stylesheet.css" />
+    <Content Include="assets\images\back_arrow_active.png" />
+    <Content Include="assets\images\back_arrow_hover.png" />
+    <Content Include="assets\images\bolit_blue.png" />
+    <Content Include="assets\images\bolit_gray.png" />
+    <Content Include="assets\images\bolit_mehron.png" />
+    <Content Include="assets\images\book-meeting-icon.png" />
+    <Content Include="assets\images\book-meeting-icon_grey.png" />
+    <Content Include="assets\images\booking-img.png" />
+    <Content Include="assets\images\business_case-icon.png" />
+    <Content Include="assets\images\business_case-icon_grey.png" />
+    <Content Include="assets\images\bx_loader.gif" />
+    <Content Include="assets\images\calender-left.png" />
+    <Content Include="assets\images\calender-right.png" />
+    <Content Include="assets\images\checkbox.png" />
+    <Content Include="assets\images\close-icon-2.png" />
+    <Content Include="assets\images\close-icon.png" />
+    <Content Include="assets\images\close_icon.jpg" />
+    <Content Include="assets\images\controls.png" />
+    <Content Include="assets\images\controls1.png" />
+    <Content Include="assets\images\cpc-admin-icon.png" />
+    <Content Include="assets\images\cpc-admin-icon_grey.png" />
+    <Content Include="assets\images\cpc-icon.png" />
+    <Content Include="assets\images\cpc-icon_grey.png" />
+    <Content Include="assets\images\dashboard-icon.png" />
+    <Content Include="assets\images\dashboard-icon_grey.png" />
+    <Content Include="assets\images\default-user-pic.png" />
+    <Content Include="assets\images\footer-img.png" />
+    <Content Include="assets\images\form-banner.png" />
+    <Content Include="assets\images\group.png" />
+    <Content Include="assets\images\Loader_images\loading.gif" />
+    <Content Include="assets\images\Loader_images\loading5.gif" />
+    <Content Include="assets\images\Loader_images\loading_gif.gif" />
+    <Content Include="assets\images\Loader_images\preloader.gif" />
+    <Content Include="assets\images\logo-bg-strip.png" />
+    <Content Include="assets\images\logo.png" />
+    <Content Include="assets\images\news-banner.png" />
+    <Content Include="assets\images\news-pick1.png" />
+    <Content Include="assets\images\news_icon1.png" />
+    <Content Include="assets\images\next_arrow_active.png" />
+    <Content Include="assets\images\next_arrow_hover.png" />
+    <Content Include="assets\images\notification-hover.png" />
+    <Content Include="assets\images\notification.png" />
+    <Content Include="assets\images\policies-icon.png" />
+    <Content Include="assets\images\policies-icon_grey.png" />
+    <Content Include="assets\images\policy.png" />
+    <Content Include="assets\images\popup_icon.png" />
+    <Content Include="assets\images\remove-icon-png-26.png" />
+    <Content Include="assets\images\salogan.png" />
+    <Content Include="assets\images\select-icon-2.png" />
+    <Content Include="assets\images\slide-1.png" />
+    <Content Include="assets\images\ui-icons_444444_256x240.png" />
+    <Content Include="assets\images\ui-icons_555555_256x240.png" />
+    <Content Include="assets\images\user-info.png" />
+    <Content Include="assets\images\weather-next.png" />
+    <Content Include="assets\images\weather-perv.png" />
+    <Content Include="assets\js\bootstrap.js" />
+    <Content Include="assets\js\bootstrap.min.js" />
+    <Content Include="assets\js\jQuery-datepicker-UI-v1-12.js" />
+    <Content Include="assets\js\jquery.balloon.js" />
+    <Content Include="assets\js\jquery.bxslider.min.js" />
+    <Content Include="assets\js\jquery.js" />
+    <Content Include="assets\js\jquery.min.js" />
+    <Content Include="assets\js\jquery.timepicker.min.js" />
+    <Content Include="assets\js\npm.js" />
+    <Content Include="bin\Debug\AjaxControlToolkit.dll" />
+    <Content Include="bin\Debug\UBL-FRMS.dll" />
+    <Content Include="bin\Debug\UBL-FRMS.pdb" />
+    <Content Include="bin\Release\UBL-FRMS.dll" />
+    <Content Include="bin\Release\UBL-FRMS.pdb" />
+    <Content Include="ControlTemplates\UBL-FRMS\CDCCaseCloseConfirmation.ascx" />
+    <Content Include="ControlTemplates\UBL-FRMS\CDCCaseInvestigationComments.ascx" />
+    <Content Include="ControlTemplates\UBL-FRMS\CDCCustomerInformationTAB.ascx" />
+    <Content Include="ControlTemplates\UBL-FRMS\CDCDecisionInformation.ascx" />
+    <Content Include="ControlTemplates\UBL-FRMS\CDCFactsAndFinding.ascx" />
+    <Content Include="ControlTemplates\UBL-FRMS\CDCFRMUInternalInformation.ascx" />
+    <Content Include="ControlTemplates\UBL-FRMS\CDCReportingDateTAB.ascx" />
+    <Content Include="ControlTemplates\UBL-FRMS\CDCSBPFinancial.ascx" />
+    <Content Include="ControlTemplates\UBL-FRMS\CDCStaffDetails.ascx" />
+    <Content Include="ControlTemplates\UBL-FRMS\CDCTransactionTAB.ascx" />
+    <Content Include="ControlTemplates\UBL-FRMS\LDCApplicationDetailTAB.ascx" />
+    <Content Include="ControlTemplates\UBL-FRMS\LDCCaseBriefingTAB.ascx" />
+    <Content Include="ControlTemplates\UBL-FRMS\LDCCaseCloseConfirmationTAB.ascx" />
+    <Content Include="ControlTemplates\UBL-FRMS\LDCCaseInvestigationCommentsTAB.ascx" />
+    <Content Include="ControlTemplates\UBL-FRMS\LDCCheckFraudDBTAB.ascx" />
+    <Content Include="ControlTemplates\UBL-FRMS\LDCDecisionInformationTAB.ascx" />
+    <Content Include="ControlTemplates\UBL-FRMS\LDCFactsAndFindingTAB.ascx" />
+    <Content Include="ControlTemplates\UBL-FRMS\LDCReportingDateTAB.ascx" />
+    <Content Include="ControlTemplates\UBL-FRMS\LDCSBPFinancialTAB.ascx" />
+    <Content Include="ControlTemplates\UBL-FRMS\LDCStaffDetailTAB.ascx" />
+    <Content Include="ControlTemplates\UBL-FRMS\UCAnnouncement.ascx" />
+    <Content Include="ControlTemplates\UBL-FRMS\UCAnnouncementDetails.ascx" />
+    <Content Include="ControlTemplates\UBL-FRMS\UCAnnouncementListing.ascx" />
+    <Content Include="ControlTemplates\UBL-FRMS\UCBanner.ascx" />
+    <Content Include="ControlTemplates\UBL-FRMS\UCCardDisputeCases.ascx" />
+    <Content Include="ControlTemplates\UBL-FRMS\UCCreateCardDisputeCases.ascx" />
+    <Content Include="ControlTemplates\UBL-FRMS\UCCreateLoanCases.ascx" />
+    <Content Include="ControlTemplates\UBL-FRMS\UCFeatureCategory.ascx" />
+    <Content Include="ControlTemplates\UBL-FRMS\UCLoanDisputeCases.ascx" />
+    <Content Include="CustomMasterPages\Elements.xml" />
+    <Content Include="Pages\CardDisputeCases.aspx" />
+    <Content Include="Pages\CreateCardDisputeCases.aspx" />
+    <Content Include="Pages\CreateLoanCases.aspx" />
+    <Content Include="Pages\Elements.xml" />
+    <Content Include="Pages\Home.aspx" />
+    <Content Include="Pages\LoanCases.aspx" />
+    <None Include="CustomMasterPages\FRMSMasterPage.master" />
+    <Content Include="Features\Feature1\Feature1.Template.xml">
+      <DependentUpon>Feature1.feature</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>
